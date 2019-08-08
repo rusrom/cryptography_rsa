@@ -41,7 +41,7 @@ signature = private_key.sign(
 # Return the hexadecimal representation of the binary data. Every byte of data is converted into the corresponding 2-digit hex representation.
 # The returned bytes object is therefore twice as long as the length of data.
 # https://docs.python.org/3/library/binascii.html#binascii.hexlify
-# signature_string = binascii.hexlify(signature).decode()
+# signature_string = binascii.hexlify(signature).decode('ascii')
 
 # Similar functionality (but returning a text string) is also conveniently accessible using the bytes.hex() method.
 # https://docs.python.org/3/library/stdtypes.html#bytes.hex
